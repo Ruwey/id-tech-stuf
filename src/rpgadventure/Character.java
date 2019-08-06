@@ -20,4 +20,9 @@ public class Character {
         int dmgDlt = this.takeDmg(attckDmg);
         return dmgDlt;
     }
+
+    // Checks if character is alive
+    public boolean isAlive(){
+        return health > 0;
+    }
 }
