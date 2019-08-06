@@ -17,7 +17,7 @@ public class Character {
     // Generating the attack dmg
     public int attack(Character target){
         int attckDmg = this.stregth*2;
-        int dmgDlt = this.takeDmg(attckDmg);
+        int dmgDlt = target.takeDmg(attckDmg);
         return dmgDlt;
     }
 
@@ -25,4 +25,5 @@ public class Character {
     public boolean isAlive(){
         return health > 0;
     }
+
 }
