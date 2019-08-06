@@ -7,7 +7,7 @@ public class Arena {
         player1.name = "Jerry";
         player1.stregth = 2;
         player1.health = 50;
-        player1.defence = 3;
+        player1.defence = 12;
 
         // Player 2 Configuration
         Character player2 = new Character();
@@ -35,5 +35,12 @@ public class Arena {
         }
         System.out.println(player1.name + " : " + player1.health);
         System.out.println(player2.name + " : " + player2.health);
+        if (player1.isAlive()) {
+            System.out.println(player1.name + " wins!");
+        } else if (player2.isAlive()) {
+            System.out.println(player2.name + " wins!");
+        } else {
+            System.out.println("Everyone is dead...");
+        }
     }
 }
