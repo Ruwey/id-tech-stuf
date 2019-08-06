@@ -1,17 +1,17 @@
 package rpgadventure;
+import java.util.Random;
 
 public class Arena {
+    public static Random ranGen = new Random();
     public static void main(String[] args) {
         // Player 1 Configuration
         Character player1 = new Character();
-        player1.name = "Jerry";
         player1.stregth = 2;
         player1.health = 50;
         player1.defence = 12;
 
         // Player 2 Configuration
         Character player2 = new Character();
-        player2.name = "Larry";
         player2.stregth = 6;
         player2.health = 50;
         player2.defence = 0;

@@ -1,6 +1,13 @@
 package rpgadventure;
 
+
 public class Character {
+    public static String[] nameList = {"Larry","Jerry","Karry","Berry","Terry"};
+    // Constructor
+    public Character(){
+        this.name = nameList[Arena.ranGen.nextInt(nameList.length)];
+    }
+    public Character()
     // Basic character attributes
     public String name;
     public int stregth;
