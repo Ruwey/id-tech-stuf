@@ -1,5 +1,7 @@
 package rpgadventure;
 import rpgadventure.characters.Character;
+import rpgadventure.characters.JohnCena;
+import rpgadventure.characters.Mage;
 import rpgadventure.characters.Rogue;
 
 import java.util.Random;
@@ -8,10 +10,12 @@ public class Arena {
     public static Random ranGen = new Random();
     public static void main(String[] args) {
         // Player 1 Configuration
-        Character player1 = new Character(10,2,50);
+        Character player1 = new Mage();
+        player1.name = "Mage";
 
         // Player 2 Configuration
-        Character player2 = new Rogue();
+        Character player2 = new JohnCena();
+        player2.name = "John Cena";
 
         System.out.println(player1.name + " vs " + player2.name);
         System.out.println(player1.health + " vs " + player2.health);
