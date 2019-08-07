@@ -1,20 +1,17 @@
 package rpgadventure;
+import rpgadventure.characters.Character;
+import rpgadventure.characters.Rogue;
+
 import java.util.Random;
 
 public class Arena {
     public static Random ranGen = new Random();
     public static void main(String[] args) {
         // Player 1 Configuration
-        Character player1 = new Character();
-        player1.stregth = 2;
-        player1.health = 50;
-        player1.defence = 12;
+        Character player1 = new Character(10,2,50);
 
         // Player 2 Configuration
-        Character player2 = new Character();
-        player2.stregth = 6;
-        player2.health = 50;
-        player2.defence = 0;
+        Character player2 = new Rogue();
 
         System.out.println(player1.name + " vs " + player2.name);
         System.out.println(player1.health + " vs " + player2.health);
