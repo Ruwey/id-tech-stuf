@@ -1,0 +1,81 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/b2ed9543/
+Adventure	textadventure/Adventure.java	/^public class Adventure {$/;"	c
+Arena	rpgadventure/Arena.java	/^public class Arena {$/;"	c
+ArethmeticEcample	tutorial/ArethmeticEcample.java	/^public class ArethmeticEcample {$/;"	c
+Character	rpgadventure/characters/Character.java	/^    public Character(){$/;"	m	class:Character
+Character	rpgadventure/characters/Character.java	/^    public Character(int str, int def, int health){$/;"	m	class:Character
+Character	rpgadventure/characters/Character.java	/^public class Character {$/;"	c
+CharacterCreator	tutorial/CharacterCreator.java	/^public class CharacterCreator {$/;"	c
+CharacterPrinter	tutorial/CharacterPrinter.java	/^public class CharacterPrinter {$/;"	c
+CheckInventory	tutorial/CheckInventory.java	/^public class CheckInventory {$/;"	c
+DragonSlayer	tutorial/DragonSlayer.java	/^public class DragonSlayer {$/;"	c
+EndlissDungon	tutorial/EndlissDungon.java	/^public class EndlissDungon {$/;"	c
+JohnCena	rpgadventure/characters/JohnCena.java	/^    public JohnCena(){$/;"	m	class:JohnCena
+JohnCena	rpgadventure/characters/JohnCena.java	/^public class JohnCena extends Character {$/;"	c
+LinkedLists	datastructures/LinkedLists.java	/^public class LinkedLists {$/;"	c
+ListExample	datastructures/ListExample.java	/^public class ListExample {$/;"	c
+MadLibs	tutorial/MadLibs.java	/^public class MadLibs {$/;"	c
+Mage	rpgadventure/characters/Mage.java	/^    public Mage(){$/;"	m	class:Mage
+Mage	rpgadventure/characters/Mage.java	/^public class Mage extends Character {$/;"	c
+MonsterGenerator	tutorial/MonsterGenerator.java	/^public class MonsterGenerator {$/;"	c
+Rogue	rpgadventure/characters/Rogue.java	/^    public Rogue(){$/;"	m	class:Rogue
+Rogue	rpgadventure/characters/Rogue.java	/^public class Rogue extends Character{$/;"	c
+TheGuard	tutorial/TheGuard.java	/^public class TheGuard {$/;"	c
+Tresure	tutorial/Tresure.java	/^public class Tresure {$/;"	c
+ask	tutorial/MadLibs.java	/^    public static String ask(String question,char prompt){$/;"	m	class:MadLibs
+attack	rpgadventure/characters/Character.java	/^    public int attack(Character target){$/;"	m	class:Character
+attack	rpgadventure/characters/JohnCena.java	/^    public int attack(Character target){$/;"	m	class:JohnCena
+attack	rpgadventure/characters/Mage.java	/^    public int attack(Character target){$/;"	m	class:Mage
+attack	rpgadventure/characters/Rogue.java	/^    public int attack(Character target){$/;"	m	class:Rogue
+checkInventory	tutorial/CheckInventory.java	/^    public static boolean checkInventory(String[] inventory,String toCheck){$/;"	m	class:CheckInventory
+datastructures	datastructures/LinkedLists.java	/^package datastructures;$/;"	p
+datastructures	datastructures/ListExample.java	/^package datastructures;$/;"	p
+defence	rpgadventure/characters/Character.java	/^    public int defence;$/;"	f	class:Character
+dexterity	rpgadventure/characters/Rogue.java	/^    public int dexterity = 20;$/;"	f	class:Rogue
+health	rpgadventure/characters/Character.java	/^    public int health;$/;"	f	class:Character
+intro	tutorial/MadLibs.java	/^    public static void intro(){$/;"	m	class:MadLibs
+isAlive	rpgadventure/characters/Character.java	/^    public boolean isAlive(){$/;"	m	class:Character
+main	datastructures/LinkedLists.java	/^    public static void main(String[] args) {$/;"	m	class:LinkedLists
+main	datastructures/ListExample.java	/^    public static void main(String[] args) {$/;"	m	class:ListExample
+main	rpgadventure/Arena.java	/^    public static void main(String[] args) {$/;"	m	class:Arena
+main	textadventure/Adventure.java	/^    public static void main(String[] args) {$/;"	m	class:Adventure
+main	tutorial/ArethmeticEcample.java	/^    public static void main(String[] args) {$/;"	m	class:ArethmeticEcample
+main	tutorial/CharacterCreator.java	/^    public static void main(String[] args) {$/;"	m	class:CharacterCreator
+main	tutorial/CharacterPrinter.java	/^    public static void main(String[] args) {$/;"	m	class:CharacterPrinter
+main	tutorial/CheckInventory.java	/^    public static void main(String[] args) {$/;"	m	class:CheckInventory
+main	tutorial/DragonSlayer.java	/^    public static void main(String[] args) {$/;"	m	class:DragonSlayer
+main	tutorial/EndlissDungon.java	/^    public static void main(String[] args) {$/;"	m	class:EndlissDungon
+main	tutorial/MadLibs.java	/^    public static void main(String[] args) {$/;"	m	class:MadLibs
+main	tutorial/MonsterGenerator.java	/^    public static void main(String[] args) {$/;"	m	class:MonsterGenerator
+main	tutorial/TheGuard.java	/^    public static void main(String[] args) {$/;"	m	class:TheGuard
+main	tutorial/Tresure.java	/^    public static void main(String[] args) {$/;"	m	class:Tresure
+mana	rpgadventure/characters/Mage.java	/^    int mana;$/;"	f	class:Mage
+name	rpgadventure/characters/Character.java	/^    public String name;$/;"	f	class:Character
+nameList	rpgadventure/characters/Character.java	/^    public static String[] nameList = {"Larry","Jerry","Karry","Berry","Terry"};$/;"	f	class:Character
+printInventory	tutorial/CheckInventory.java	/^    public static void printInventory(String[] inventory) {$/;"	m	class:CheckInventory
+printMadLib	tutorial/MadLibs.java	/^    public static void printMadLib(String adjective, String noun, String animal, String noise){$/;"	m	class:MadLibs
+ranGen	rpgadventure/Arena.java	/^    public static Random ranGen = new Random();$/;"	f	class:Arena
+rpgadventure	rpgadventure/Arena.java	/^package rpgadventure;$/;"	p
+rpgadventure.characters	rpgadventure/characters/Character.java	/^package rpgadventure.characters;$/;"	p
+rpgadventure.characters	rpgadventure/characters/JohnCena.java	/^package rpgadventure.characters;$/;"	p
+rpgadventure.characters	rpgadventure/characters/Mage.java	/^package rpgadventure.characters;$/;"	p
+rpgadventure.characters	rpgadventure/characters/Rogue.java	/^package rpgadventure.characters;$/;"	p
+stregth	rpgadventure/characters/Character.java	/^    public int stregth;$/;"	f	class:Character
+takeDmg	rpgadventure/characters/Character.java	/^    public int takeDmg( int dmg ){$/;"	m	class:Character
+textadventure	textadventure/Adventure.java	/^package textadventure;$/;"	p
+tutorial	tutorial/ArethmeticEcample.java	/^package tutorial;$/;"	p
+tutorial	tutorial/CharacterCreator.java	/^package tutorial;$/;"	p
+tutorial	tutorial/CharacterPrinter.java	/^package tutorial;$/;"	p
+tutorial	tutorial/CheckInventory.java	/^package tutorial;$/;"	p
+tutorial	tutorial/DragonSlayer.java	/^package tutorial;$/;"	p
+tutorial	tutorial/EndlissDungon.java	/^package tutorial;$/;"	p
+tutorial	tutorial/MadLibs.java	/^package tutorial;$/;"	p
+tutorial	tutorial/MonsterGenerator.java	/^package tutorial;$/;"	p
+tutorial	tutorial/TheGuard.java	/^package tutorial;$/;"	p
+tutorial	tutorial/Tresure.java	/^package tutorial;$/;"	p
