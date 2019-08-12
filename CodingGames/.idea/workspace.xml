@@ -26,6 +26,11 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="com.maddyhome.idea.vim.ui.VimEmulationConfigurable" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="graphicsbasics" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -38,13 +43,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.RobotHead">
-    <configuration name="MyFirstProcessing" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GraphicsBasics.MyFirstProcessing" />
+  <component name="RunManager" selected="Application.Movement">
+    <configuration name="Movement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="graphicsbasics.Movement" />
       <module name="CodingGames" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="GraphicsBasics.*" />
+          <option name="PATTERN" value="graphicsbasics.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -92,11 +97,11 @@
       </method>
     </configuration>
     <configuration name="RobotHead" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="graphicsbasics.robothead.RobotHead" />
+      <option name="MAIN_CLASS_NAME" value="graphicsbasics.RobotHead" />
       <module name="CodingGames" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="graphicsbasics.robothead.*" />
+          <option name="PATTERN" value="graphicsbasics.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,11 +111,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Movement" />
         <item itemvalue="Application.RobotHead" />
         <item itemvalue="Application.MyFirstProject (2)" />
         <item itemvalue="Application.MyFirstProject (1)" />
         <item itemvalue="Application.MyFirstProject" />
-        <item itemvalue="Application.MyFirstProcessing" />
       </list>
     </recent_temporary>
   </component>
