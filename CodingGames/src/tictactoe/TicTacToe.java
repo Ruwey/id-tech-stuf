@@ -46,6 +46,10 @@ public class TicTacToe extends PApplet{
                 board[i][j].drawTurn();
             }
         }
+
+        if (winner != 1) {
+            print("Win: " + winner);
+        }
     }
 
     public void mousePressed() {
@@ -56,8 +60,40 @@ public class TicTacToe extends PApplet{
         }
     }
 
-    public void checkWin() {
+    // Check win should check to see if any player has one
+    // It will need to check columns, rows, and diagonals
+    int winner = -1;
+    public void checkWin(int x, int y,int turn) {
+        // Set win variables
+        int colWin = 0;
+        int rowWin = 0;
+        int diag1Win = 0;
+        int diag2Win = 0;
 
+        // Loop through the three boxes to check in every combo
+        for (int i = 0; i < 3; i++) {
+            // Check the move's column
+            if (board[x][i].state == turn) {
+                colWin++;
+            }
+            // Check the move's row
+            if (board[i][y].state == turn) {
+                rowWin++;
+            }
+            // Check diagonal 1
+            if (board[i][i].state == turn) {
+                diag1Win++;
+            }
+            // Check diagonal 2
+            if (board[i][2 - 1].state == turn) {
+                diag2Win++;
+            }
+        }
+
+        // Check if there were any full lines
+        if (colWin == 3 || rowWin == 3 || diag1Win == 3 || diag2Win == 3) {
+            winner = turn;
+        }
     }
 
     public class GridSquare {
