@@ -99,7 +99,8 @@ public class Movement extends PApplet {
 
     public void move() {
         if (moveForward) {
-            x += speed;
+            x += speed * cos(rotation);
+            y += speed * sin(rotation);
         }
     }
 
@@ -111,6 +112,7 @@ public class Movement extends PApplet {
                 rotation = 2 * PI;
             }
         }
+
         if (rotateRight) {
             if (rotation < (2 * PI)) {
                 rotation += 0.1;
