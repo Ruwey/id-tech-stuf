@@ -11,6 +11,13 @@ public class TicTacToe extends PApplet{
     int totalTurns = 0;
     GridSquare[][] board;
 
+    // Game State
+    enum GameState {
+        OVER,
+        PLAYING
+    }
+    static GameState currentState;
+
     public static void main(String[] args) {
         PApplet.main("tictactoe.TicTacToe");
     }
@@ -20,6 +27,7 @@ public class TicTacToe extends PApplet{
         h = height / rows;
         w = width / cols;
         board = new GridSquare[rows][cols];
+        currentState = GameState.PLAYING;
 
         for (int r = 0; r < rows; r++) {
             for (int c = 0; c < cols; c++){
@@ -38,6 +46,22 @@ public class TicTacToe extends PApplet{
     public void draw() {
         background(255);
 
+        switch (currentState) {
+            case PLAYING:
+                drawPlaying();
+                break;
+
+            case OVER:
+                drawPlaying();
+                drawOver();
+                break;
+        }
+    }
+
+    // Functions for the states
+    void drawPlaying() {
+        background(255);
+
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
                 stroke(0);
@@ -47,15 +71,30 @@ public class TicTacToe extends PApplet{
             }
         }
 
-        if (winner != 1) {
-            print("Win: " + winner);
+    }
+
+    void drawOver() {
+        fill(0,255,0);
+        rect(100,100,100,50);
+        fill(0);
+        textAlign(CENTER);
+        text("Game Over", width / 2, 110);
+        if (winner == 0) {
+            text("O wins", width / 2, 130);
+        } else if (winner == 1) {
+            text("X wins", width / 2, 130);
+        } else if (totalTurns == 9) {
+            text("Draw", width / 2, 130);
         }
     }
 
     public void mousePressed() {
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
-                totalTurns = board[i][j].onClick(mouseX, mouseY, totalTurns);
+                if (board[i][j].state == -1 && currentState == GameState.PLAYING) {
+                    totalTurns = board[i][j].onClick(mouseX, mouseY, totalTurns);
+                    checkWin(i,j,board[i][j].state);
+                }
             }
         }
     }
@@ -85,7 +124,7 @@ public class TicTacToe extends PApplet{
                 diag1Win++;
             }
             // Check diagonal 2
-            if (board[i][2 - 1].state == turn) {
+            if (board[i][2 - i].state == turn) {
                 diag2Win++;
             }
         }
@@ -93,6 +132,16 @@ public class TicTacToe extends PApplet{
         // Check if there were any full lines
         if (colWin == 3 || rowWin == 3 || diag1Win == 3 || diag2Win == 3) {
             winner = turn;
+        }
+
+        if (winner != -1) {
+            currentState = GameState.OVER;
+        }
+
+        // Check for a draw
+        if (totalTurns == 9) {
+            print("Draw");
+            currentState = GameState.OVER;
         }
     }
 
@@ -116,7 +165,7 @@ public class TicTacToe extends PApplet{
             if (state == 0) {
                 //Draw O
                 ellipse(x + w/2, y + h/2, w, h);
-                ellipse((x + w/2), y + h/2, w - 10, h - 10);
+                //ellipse((x + w/2), y + h/2, w - 10, h - 10);
             }
             if (state == 1) {
                 //Draw X
