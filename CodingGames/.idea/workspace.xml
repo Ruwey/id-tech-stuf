@@ -43,7 +43,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.NPC">
+  <component name="RunManager" selected="Application.ImageTest">
     <configuration name="EnumTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="graphicsbasics.EnumTest" />
       <module name="CodingGames" />
@@ -57,12 +57,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoopingTimers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="graphicsbasics.LoopingTimers" />
+    <configuration name="ImageTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="polishandgraphics.ImageTest" />
       <module name="CodingGames" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="graphicsbasics.*" />
+          <option name="PATTERN" value="polishandgraphics.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,11 +111,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ImageTest" />
         <item itemvalue="Application.NPC" />
         <item itemvalue="Application.TicTacToe" />
         <item itemvalue="Application.EnumTest" />
         <item itemvalue="Application.MouseInput" />
-        <item itemvalue="Application.LoopingTimers" />
       </list>
     </recent_temporary>
   </component>
