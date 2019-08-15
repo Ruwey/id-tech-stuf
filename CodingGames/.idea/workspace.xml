@@ -21,7 +21,7 @@
   <component name="ProjectId" id="1PKkjFMzcO3jLPROAW8Ii1GDPYP" />
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/processing-3.5.3/core/library/core.jar!/" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="com.maddyhome.idea.vim.ui.VimEmulationConfigurable" />
@@ -43,13 +43,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ImageTest">
-    <configuration name="EnumTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="graphicsbasics.EnumTest" />
+  <component name="RunManager" selected="Application.CheckInventory">
+    <configuration name="CheckInventory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="alacarte.CheckInventory" />
       <module name="CodingGames" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="graphicsbasics.*" />
+          <option name="PATTERN" value="alacarte.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -57,8 +57,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ImageTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="polishandgraphics.ImageTest" />
+    <configuration name="FireFly" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="polishandgraphics.FireFly" />
       <module name="CodingGames" />
       <extension name="coverage">
         <pattern>
@@ -70,21 +70,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MouseInput" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="graphicsbasics.MouseInput" />
-      <module name="CodingGames" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="graphicsbasics.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NPC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="polishandgraphics.NPC" />
+    <configuration name="Menus" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="polishandgraphics.Menus" />
       <module name="CodingGames" />
       <extension name="coverage">
         <pattern>
@@ -96,12 +83,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TicTacToe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tictactoe.TicTacToe" />
+    <configuration name="RandomArt" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="polishandgraphics.RandomArt" />
       <module name="CodingGames" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tictactoe.*" />
+          <option name="PATTERN" value="polishandgraphics.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SwitchMenu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="alacarte.SwitchMenu" />
+      <module name="CodingGames" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="alacarte.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,11 +111,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ImageTest" />
-        <item itemvalue="Application.NPC" />
-        <item itemvalue="Application.TicTacToe" />
-        <item itemvalue="Application.EnumTest" />
-        <item itemvalue="Application.MouseInput" />
+        <item itemvalue="Application.CheckInventory" />
+        <item itemvalue="Application.SwitchMenu" />
+        <item itemvalue="Application.Menus" />
+        <item itemvalue="Application.FireFly" />
+        <item itemvalue="Application.RandomArt" />
       </list>
     </recent_temporary>
   </component>

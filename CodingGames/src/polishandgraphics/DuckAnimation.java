@@ -7,6 +7,7 @@ public class DuckAnimation extends PApplet {
     // Variables
     int imgNum = 10;
     PImage[] dudeImgs;
+    int imgIndex = 0;
 
     public static void main(String[] args) {
         PApplet.main("polishandgraphics.DuckAnimation");
@@ -22,13 +23,16 @@ public class DuckAnimation extends PApplet {
         for (int i = 0; i < imgNum; i++) {
             dudeImgs[i] = loadImage("photos/" + i + ".jpg");
         }
+        frameRate(10);
     }
 
     public void draw() {
         background(255);
 
-        for (int i = 0; i < imgNum; i++) {
-           //START HERE
+        image(dudeImgs[imgIndex], 0, 0);
+        imgIndex++;
+        if (imgIndex >= dudeImgs.length) {
+            imgIndex = 0;
         }
     }
 }
